@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule }      from '@angular/core';
+import { NgbModule }     from '@ng-bootstrap/ng-bootstrap';
 
-import { AppComponent } from './app.component';
+import { AppComponent }  from './app.component';
+import { TestBootstrapScssComponent } from './components/test-bootstrap-scss/test-bootstrap-scss.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestBootstrapScssComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
