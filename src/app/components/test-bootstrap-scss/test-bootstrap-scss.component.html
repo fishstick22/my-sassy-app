@@ -53,6 +53,7 @@
     </tr>
   </tbody>
 </table>
+
 <h4>Gradients</h4>
 <div class="p-3 mb-2 bg-gradient-primary text-white">.bg-gradient-primary</div>
 <div class="p-3 mb-2 bg-gradient-secondary text-white">.bg-gradient-secondary</div>
@@ -62,3 +63,15 @@
 <div class="p-3 mb-2 bg-gradient-info text-white">.bg-gradient-info</div>
 <div class="p-3 mb-2 bg-gradient-light text-dark">.bg-gradient-light</div>
 <div class="p-3 mb-2 bg-gradient-dark text-white">.bg-gradient-dark</div>
+
+<h4>ng click outside</h4>
+<div
+  (click)="onClick($event)"
+  (clickOutside)="onClickedOutside($event)">
+  <p>Clicked inside: {{countInside}}</p>
+  <p>Clicked outside: {{countOutside}}</p>
+  <label>
+    <input type="checkbox" [checked]="attachOutsideOnClick" (click)="_toggleAttachOutsideOnClick()" />
+    <span>Attach on click</span>
+  </label>
+</div>
