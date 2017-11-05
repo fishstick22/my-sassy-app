@@ -6,11 +6,13 @@ import { ClickOutsideModule } from 'ng-click-outside';
 
 import { AppComponent }  from './app.component';
 import { TestBootstrapScssComponent } from './components/test-bootstrap-scss/test-bootstrap-scss.component';
+import { PopoverTplcontentComponent } from './components/popover-tplcontent/popover-tplcontent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestBootstrapScssComponent
+    TestBootstrapScssComponent,
+    PopoverTplcontentComponent
   ],
   imports: [
     BrowserModule,

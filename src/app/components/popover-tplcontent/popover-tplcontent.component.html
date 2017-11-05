@@ -1,0 +1,12 @@
+<p>
+  Popovers can contain any arbitrary HTML, Angular bindings and even directives!
+  Simply enclose desired content in a <code>&lt;ng-template&gt;</code> element.
+  <a href="https://ng-bootstrap.github.io/#/components/popover/examples" targt="_blank">
+  ng bootstrap Popover examples</a>
+</p>
+
+<ng-template #popContent>Hello, <b>{{name}}</b>!</ng-template>
+<button type="button" class="btn btn-outline-secondary" placement="right"
+[ngbPopover]="popContent" popoverTitle="">
+  I've got markup and bindings in my popover!
+</button>
